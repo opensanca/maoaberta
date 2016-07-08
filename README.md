@@ -1,4 +1,7 @@
 # Mão Aberta
+
+[![Build Status](https://travis-ci.org/opensanca/maoaberta.svg?branch=master)](https://travis-ci.org/opensanca/maoaberta)
+
 Se trata de um projeto social idealizado pelo participantes da Trilha Python, da qual visa consolidar os conhecimentos adquiridos no treinamento visam devolver algo de positivo para a sociedade.
 Assim sendo, surgiu o projeto **Mão Aberta**, que visa fornecer uma aplicação web para que Asilos, Orfanatos e Escolas que precisam de ajuda possam ter maior visibilidade e o público possa ajudar conforme viabilidade.
 
