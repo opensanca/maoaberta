@@ -22,6 +22,9 @@ Basicamente as instituições poderão se cadastrar na aplicação, informando d
   
   ### Como funciona a interação da aplicação com os participantes:
   Os participantes deverão ter um login (e-mail/senha ou 0auth) da qual poderão se vincular a uma instituição e ajudar mensalmente, anulamente ou apenas 1x.
-  
-  
+
+
   ##License:
+  Ver arquivo LICENSE.md
+
+Projeto de alguma coisa que eu não exatamente o que, mas futuramente saberei
