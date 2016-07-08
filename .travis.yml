@@ -1,19 +1,10 @@
 language: python
 
 python:
-  - "3.4"
   - "3.5"
-
-services:
-  - mysql
 
 install:
   - pip install -r requirements/test.txt
 
 script:
   - flake8 --ignore=E501 maoaberta
-  - py.test --cov-config .coveragerc maoaberta
-
-after_success:
-  - coverage report
-  - coveralls
