@@ -25,5 +25,6 @@ Basicamente as instituições poderão se cadastrar na aplicação, informando d
 
 
   ##License:
+  Ver arquivo LICENSE.md
 
 Projeto de alguma coisa que eu não exatamente o que, mas futuramente saberei
