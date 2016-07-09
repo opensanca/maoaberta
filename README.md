@@ -1,4 +1,4 @@
-[Opensanca](https://pbs.twimg.com/profile_images/612970307821764609/um0MzITq.jpg) (http://www.opensanca.com.br/)
+[![Opensanca](https://pbs.twimg.com/profile_images/612970307821764609/um0MzITq.jpg)] (http://www.opensanca.com.br/)
 
 # Mão Aberta
 
