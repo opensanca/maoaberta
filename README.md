@@ -1,6 +1,6 @@
 [![Opensanca](https://pbs.twimg.com/profile_images/612970307821764609/um0MzITq.jpg)] (http://www.opensanca.com.br/)
 
-# Mão Aberta
+#Opensanca - Mão Aberta
 
 [![Build Status](https://travis-ci.org/opensanca/maoaberta.svg?branch=master)](https://travis-ci.org/opensanca/maoaberta)
 [![Coverage Status](https://coveralls.io/repos/github/opensanca/maoaberta/badge.svg)](https://coveralls.io/github/opensanca/maoaberta)
@@ -19,18 +19,18 @@ Basicamente as instituições poderão se cadastrar na aplicação, informando d
  - **Lista de Pedidos**
  - Supervisor/Coordenador/Roles
 
- ### Como funciona a lista de pedidos:
+### Como funciona a lista de pedidos:
 
- A lista de pedidos são os itens que faltam para compor a  "cesta" de itens que a insituição necessita, como por exemplo, Orfanato.
+A lista de pedidos são os itens que faltam para compor a  "cesta" de itens que a insituição necessita, como por exemplo, Orfanato.
   - Fralda
   - Produtos de Limpeza (Sabonete, Sabão, Detergente, Bombril...)
   - Mantimentos (Leite, Chocolate, Bolacha...)
 
-  ### Como funciona a interação da aplicação com os participantes:
-  Os participantes deverão ter um login (e-mail/senha ou 0auth) da qual poderão se vincular a uma instituição e ajudar mensalmente, anulamente ou apenas 1x.
+### Como funciona a interação da aplicação com os participantes:
+Os participantes deverão ter um login (e-mail/senha ou 0auth) da qual poderão se vincular a uma instituição e ajudar mensalmente, anulamente ou apenas 1x.
 
 
-  ##License:
-  Ver arquivo LICENSE.md
+##License:
+Ver arquivo LICENSE.md
 
-Projeto de alguma coisa que eu não exatamente o que, mas futuramente saberei
+<!-- Projeto de alguma coisa que eu não exatamente o que, mas futuramente saberei -->
