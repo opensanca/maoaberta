@@ -1,3 +1,4 @@
+![Opensanca](https://pbs.twimg.com/profile_images/612970307821764609/um0MzITq.jpg)
 # Mão Aberta
 
 [![Build Status](https://travis-ci.org/opensanca/maoaberta.svg?branch=master)](https://travis-ci.org/opensanca/maoaberta)
@@ -16,14 +17,14 @@ Basicamente as instituições poderão se cadastrar na aplicação, informando d
  - Site/Facebook/Twitter and others...
  - **Lista de Pedidos**
  - Supervisor/Coordenador/Roles
- 
+
  ### Como funciona a lista de pedidos:
 
  A lista de pedidos são os itens que faltam para compor a  "cesta" de itens que a insituição necessita, como por exemplo, Orfanato.
   - Fralda
   - Produtos de Limpeza (Sabonete, Sabão, Detergente, Bombril...)
   - Mantimentos (Leite, Chocolate, Bolacha...)
-  
+
   ### Como funciona a interação da aplicação com os participantes:
   Os participantes deverão ter um login (e-mail/senha ou 0auth) da qual poderão se vincular a uma instituição e ajudar mensalmente, anulamente ou apenas 1x.
 
