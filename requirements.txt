@@ -1,3 +1,4 @@
 Django==1.9.7
 coverage==4.1
 coveralls==1.1
+psycopg2==2.6.2
