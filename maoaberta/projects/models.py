@@ -10,4 +10,4 @@ class Project(models.Model):
     description = models.TextField()
 
     def __str__(self):
-        return '{}'.format(self.nome)
+        return '{}'.format(self.name)
