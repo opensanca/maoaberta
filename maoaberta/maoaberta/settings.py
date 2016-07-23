@@ -13,17 +13,18 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
+from dj_database_url import parse as parse_db_url
+from prettyconf import config
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'f^!mtqpm%8#b10u&#&v*i+)s3vv21a8v$o3=13y78spnzf1@%n'
+SECRET_KEY = config('SECRET_KEY')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=True, cast=config.boolean)
 
 ALLOWED_HOSTS = []
 
@@ -61,6 +62,7 @@ TEMPLATES = [
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
+            'debug': config("TEMPLATE_DEBUG", default=DEBUG, cast=config.boolean),
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
@@ -78,13 +80,7 @@ WSGI_APPLICATION = 'maoaberta.wsgi.application'
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'maoaberta',
-        'USER': 'maoaberta',
-        'PASSWORD': 'maoaberta',
-        'HOST': 'localhost'
-    }
+    'default': config('DATABASE_URL', cast=parse_db_url),
 }
 
 
