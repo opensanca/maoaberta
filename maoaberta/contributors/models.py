@@ -21,7 +21,7 @@ class Contributor(models.Model):
     supported_organizations = models.ManyToManyField(Organization)
 
     def __repr__(self):
-        pass
+        return '<Contributor({}, active={})>'.format(self.user.username, self.user.is_active)
 
     def __str__(self):
-        pass
+        return self.user.get_full_name()
