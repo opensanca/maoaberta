@@ -4,9 +4,7 @@ python:
     - "3.5"
 
 env:
-    - SECRET_KEY=super-sekret-key
-    - DEBUG=True
-    - DATABASE_URL=postgres://ubuntu:@localhost:5432/whatever
+    - SECRET_KEY=super-sekret-key DEBUG=True DATABASE_URL=postgres://ubuntu:@localhost:5432/whatever
 
 install:
     - pip install -r requirements/test.txt
