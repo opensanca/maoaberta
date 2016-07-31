@@ -1,20 +1,17 @@
-from django import models
-from django.contrib.auth import get_user_model
-from django.contrib.translations import ugettext_lazy as _
+from django.db import models
+from django.contrib.auth.models import User
+from django.utils.translation import ugettext_lazy as _
 
 from organizations.models import Organization
-from projects.models import Cause, Project
-
-
-User = get_user_model()
+from projects.models import Project
 
 
 class Contributor(models.Model):
     user = models.ForeignKey(User, verbose_name=_('Login user'))
 
-    photo = models.ImageField(path='contributor_photos', verbose_name=_('Contributor photo'))
-
-    supported_causes = models.ManyToManyField(Cause)
+    photo = models.ImageField(
+        upload_to='contributor_photos', verbose_name=_('Contributor photo')
+    )
 
     supported_projects = models.ManyToManyField(Project)
 

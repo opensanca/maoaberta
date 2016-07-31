@@ -25,7 +25,7 @@ class Project(models.Model):
     )
 
     def __repr__(self):
-        return '<Project({!r})'.format(self.title)
+        return '<Project({!r})>'.format(self.title)
 
     def __str__(self):
         return self.title

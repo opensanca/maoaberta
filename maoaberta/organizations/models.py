@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
-from contributors.models import Contributor
 from projects.models import Project
 
 
@@ -28,10 +27,10 @@ class Organization(models.Model):
         verbose_name=_('Description'), help_text=_('Organization description')
     )
 
-    photo = models.ImageField(verbose_name=_('Photo'), path='organization_photos')
+    photo = models.ImageField(verbose_name=_('Photo'), upload_to='organization_photos')
 
     coordinator = models.ForeignKey(
-        Contributor, verbose_name=_('Coordinator'),
+        'contributors.Contributor', verbose_name=_('Coordinator'),
         help_text=_('Person responsible for the organization')
     )
 
