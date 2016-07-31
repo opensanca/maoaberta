@@ -12,6 +12,9 @@ class Necessity(models.Model):
     name = models.CharField(verbose_name=_('Name'), max_length=20)
     satisfied = models.BooleanField(verbose_name=_('Satisfied'), default=False)
 
+    def __repr__(self):
+        return '<Necessity({!r}, satisfied={!r})>'.format(self.name, self.satisfied)
+
     def __str__(self):
         return self.name
 

@@ -24,5 +24,8 @@ class Project(models.Model):
         User, verbose_name=_('Responsible'), related_name='projects'
     )
 
+    def __repr__(self):
+        return '<Project({!r})'.format(self.title)
+
     def __str__(self):
         return self.title
