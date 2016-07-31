@@ -1,12 +1,13 @@
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
 
 
 class Necessity(models.Model):
     """
     Item or service that an organization regularly needs
     """
-    name = models.CharField(max_length=20)
-    satisfied = models.BooleanField(default=False)
+    name = models.CharField(verbose_name=_('Name'), max_length=20)
+    satisfied = models.BooleanField(verbose_name=_('Satisfied'), default=False)
 
     def __str__(self):
-        return '{}'.format(self.name)
+        return self.name
