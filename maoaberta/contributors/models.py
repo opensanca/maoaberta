@@ -2,9 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.translation import ugettext_lazy as _
 
-from organizations.models import Organization
-from projects.models import Project
-
 
 class Contributor(models.Model):
     user = models.ForeignKey(User, verbose_name=_('Login user'))
