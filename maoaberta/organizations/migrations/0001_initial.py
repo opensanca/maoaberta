@@ -7,8 +7,8 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('contributors', '0001_initial'),
         ('projects', '0001_initial'),
+        ('contributors', '0001_initial'),
     ]
 
     operations = [

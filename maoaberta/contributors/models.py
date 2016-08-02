@@ -13,10 +13,6 @@ class Contributor(models.Model):
         upload_to='contributor_photos', verbose_name=_('Contributor photo')
     )
 
-    supported_projects = models.ManyToManyField(Project)
-
-    supported_organizations = models.ManyToManyField(Organization)
-
     def __repr__(self):
         return '<Contributor({!r}, active={!r})>'.format(self.user.username,
                                                          self.user.is_active)
