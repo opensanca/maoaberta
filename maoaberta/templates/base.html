@@ -22,7 +22,8 @@
   <body>
     <header>
       {% block header %}
-      <nav class="navbar navbar-default">
+
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -47,11 +48,43 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
+
       {% endblock header %}
     </header>
 
+    {% block menu %}
+
+    <aside class="col-md-2 col-sm-2 menu">
+      <div class="ajusta-itens">
+        <button type="button" class="btn btn-warning" name="button">Add Note</button>
+
+        <ul class="list-group">
+          <li class="list-group-item">  Projetos </li>
+          <li class="list-group-item">  Ongs</li>
+          <li class="list-group-item"> via Lactea</li>
+        </ul>
+      </div>
+    </aside>
+
+    {% endblock menu %}
+
     {% block content %}
-    <div class="container">
+		<div class="col-md-8 col-sm-2 left-side-bar">
+			<div class="row">
+				<div class="col-sm-4 col-md-4 col-lg-4">
+					<div class="thumbnail">
+						<article class="caption">
+							<span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
+
+							<h3>Titulo</h3>
+							<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>
+							<a href="#" class="btn btn-primary" role="button">Edit</a>
+							</p>
+						</article>
+					</div>
+				</div>
+      </div>
     </div>
     {% endblock content %}
 

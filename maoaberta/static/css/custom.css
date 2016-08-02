@@ -1,0 +1,39 @@
+body {
+    padding-top: 60px;
+}
+
+.navbar-default {
+    background-color:#34495e;
+    border-color: transparent;
+}
+
+.menu{
+    background:#4285f4;
+    min-height: 100vh;
+    position: relative;
+    top: -10px;
+}
+
+.navbar-default .navbar-brand {
+    color: #eee;
+}
+
+.glyphicon{
+    color:#bdc3c7;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    color: #fff;
+}
+
+.ajusta-itens{
+    top: 25px;
+    position: relative;
+}
