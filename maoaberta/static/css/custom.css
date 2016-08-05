@@ -33,7 +33,20 @@ body {
     color: #fff;
 }
 
-.ajusta-itens{
+.adjust-items {
     top: 25px;
     position: relative;
+}
+
+.org {
+    margin: 30px;
+    height: 300px;
+}
+
+.org h3 {
+    margin-top: 5px;
+}
+
+.org p {
+    text-align: justify;
 }
