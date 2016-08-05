@@ -1,5 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
     padding-top: 60px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .navbar-default {

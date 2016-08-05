@@ -1,0 +1,38 @@
+body{
+    background-color: #263238;
+    padding-top:50px;
+}
+
+h3{
+    color:#ecf0f1;
+}
+
+p{
+    padding-top:10px;
+    color:#ecf0f1;
+    font-size:1.0em;
+}
+
+a{
+    color:#f1c40f;    
+}
+
+label {
+    color:#ecf0f1;
+    padding-top:10px;
+    font-size:1.6rem;
+}
+
+button{
+    margin-top:20px;
+}
+
+.border-login{
+    border-right:1px solid #fff;
+    min-height:450px;
+    float:right;
+}
+
+.space-top{
+    padding-top:50px;
+}
