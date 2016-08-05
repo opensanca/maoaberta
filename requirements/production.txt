@@ -1,3 +1,4 @@
 prettyconf==1.2.3
 Django==1.9.8
 Pillow==3.3.0
+dj-static==0.0.6
