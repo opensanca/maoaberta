@@ -16,7 +16,6 @@
 {% block content %}
 <div class="container">
   <div class="row">
-
     <div class="col-sm-6 col-md-5 hidden-xs hidden-sm">   
       <img src="{% static 'img/logo.png' %}" alt="" class="center-block space-top" />
     </div>
@@ -25,14 +24,12 @@
       <div class="border-login"></div>
     </div>
 
-
     <div class="col-sm-12 col-xs-12 col-md-4">            
       <div class="space-top">
 
         <h3 class="text-center">/mãoaberta</h3>
 
         <form class="form-signin" class="form-horizontal">
-
           <label class=""> Usuário </label>
 
           <input type="text" class="form-control" placeholder="" required autofocus>
@@ -44,13 +41,10 @@
             Entrar
           </button>   
 
-          <p class="text-center"> Ainda não tenho, conta! Quero <a href="#">criar </a> agora mesmo!</p>
-
-
+          <p class="text-center">Ainda não tenho, conta! Quero <a href="#">criar</a> agora mesmo!</p>
         </form>
-      </div>
-
-    </div>
-  </div>
+      </div><!--space-top-->
+    </div><!--col-sm-12-->
+  </div><!--row-->
 </div>
 {% endblock content %}
