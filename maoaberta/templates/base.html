@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mão Aberta - {% block title %}{% endblock title %}</title>
+    <title>/mãoaberta - {% block title %}Frase de efeito{% endblock title %}</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
@@ -33,17 +33,17 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Mão Aberta</a>
+            <a class="navbar-brand" href="{% url 'home' %}">
+              <img alt="/mãoaberta" src="{% static 'img/logo.png' %}">
+            </a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            </ul>
-
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Login</a></li>
+              <li>
+                <button class="btn btn-sm btn-default navbar-btn" href="#">Login</button>
+              </li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -57,9 +57,9 @@
     <aside class="col-md-2 col-sm-2 menu">
       <div class="adjust-items">
         <ul class="list-group">
-          <li class="list-group-item">Projetos</li>
-          <li class="list-group-item">Ongs</li>
-          <li class="list-group-item">via Lactea</li>
+          <li class="list-group-item"><a href="#">Projetos</a></li>
+          <li class="list-group-item"><a href="#">Ongs</a></li>
+          <li class="list-group-item"><a href="#">via Lactea</a></li>
         </ul>
       </div>
     </aside>
@@ -72,10 +72,10 @@
         <div class="col-sm-4 col-md-4 col-lg-4">
           <div class="org thumbnail">
             <article class="caption">
-              <h3>Titulo</h3>
+              <h3>ONG Fulgore</h3>
               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
               <p>
-                <a href="#" class="btn btn-primary" role="button">Edit</a>
+                <a href="#" class="btn btn-primary" role="button">Apoie</a>
               </p>
             </article>
           </div>
