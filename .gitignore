@@ -106,3 +106,5 @@ docs/_build/
 # PyBuilder
 target/
 
+# env
+.env
