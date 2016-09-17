@@ -3,4 +3,3 @@ Django==1.10
 Pillow==3.3.0
 dj-static==0.0.6
 dj-database-url==0.4.1
-psycopg2==2.6.2
