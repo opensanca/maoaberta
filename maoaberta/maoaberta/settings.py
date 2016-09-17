@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = config('SECRET_KEY', default='secret_key')
 
 DEBUG = config('DEBUG', default=True, cast=config.boolean)
 
@@ -82,8 +82,10 @@ WSGI_APPLICATION = 'maoaberta.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
+DEFAULT_DATABASE = 'sqlite:///' + os.path.join(BASE_DIR, 'maoaberta.sqlite')
+
 DATABASES = {
-    'default': config('DATABASE_URL', cast=parse_db_url),
+    'default': config('DATABASE_URL', cast=parse_db_url, default=DEFAULT_DATABASE),
 }
 
 
