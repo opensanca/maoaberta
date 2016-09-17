@@ -29,6 +29,20 @@ A lista de pedidos são os itens que faltam para compor a  "cesta" de itens que 
 ### Como funciona a interação da aplicação com os participantes:
 Os participantes deverão ter um login (e-mail/senha ou 0auth) da qual poderão se vincular a uma instituição e ajudar mensalmente, anulamente ou apenas 1x.
 
+#Instalação 
+
+### 1. Instalação dos pacotes necessários
+
+``` $ pip install -r requirements.txt ```
+
+### 2. Criando a primeira migração
+
+``` $ python manage.py migrate ```
+
+### 3. Ativando o servidor localmente
+
+``` $ python manage.py runserver ```
+
 
 ##License:
 Ver arquivo LICENSE.md
