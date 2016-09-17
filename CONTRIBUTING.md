@@ -26,36 +26,42 @@ explicando como instalar e configurar o seu git para colaborar com projetos e ta
 Como rodar o mão aberta para desenvolvimento
 ---------------------------------------
 
-Fork o projeto para o seu usuário do github.  
+- Fork o projeto para o seu usuário do github:
   
-  Click no botão **Fork** localizado nesta página. Caso encontre problemas [ click aqui ](http://tableless.com.br/contribuindo-em-projetos-open-source-com-o-github/) para mais informações.
+  Clique no botão **Fork** localizado nesta página. Caso encontre problemas [clique aqui](http://tableless.com.br/contribuindo-em-projetos-open-source-com-o-github/) para mais informações.
 
-Clone o projeto mao aberta.
+- Clone o projeto mao aberta:
   
-  ```
-  $ git clone https://github.com/<seu_usuario_github>/maoaberta.git
-  ``` 
-(opcional) Crie um ambiente virtual.
-
-  ```
-  $ python -m venv env
-  $ source env/bin/activate
 ```
-Instale os requisitos.
-
-  ```
-  $ (env) pip install -r requirements/local.txt
-  ```
-Crie a primeira migração.
+$ git clone https://github.com/<seu_usuario_github>/maoaberta.git
+``` 
   
-  ```
-  $ python manage.py migrate
-  ```
-Ative o servidor.
+- (opcional) Crie um ambiente virtual:
 
-  ```
-  $ python manage.py runserver
-  ```
+```
+$ python -m venv env
+$ source env/bin/activate
+```
+
+- Instale os pré-requisitos:
+
+```
+$ cd maoaberta
+$ (env) pip install -r requirements/local.txt
+```
+
+- Execute as migrações:
+  
+```
+$ python manage.py migrate
+```
+
+- Rode o servidor.
+
+```
+$ cd maoaberta
+$ python manage.py runserver
+```
 
 Fim :-)
 
