@@ -34,9 +34,9 @@ class Organization(models.Model):
         help_text=_('Person responsible for the organization')
     )
 
-    projects = models.ManyToManyField(Project)
+    projects = models.ManyToManyField(Project, blank=True)
 
-    necessities = models.ManyToManyField(Necessity)
+    necessities = models.ManyToManyField(Necessity, blank=True)
 
     necessity_description = models.TextField(
         verbose_name=_('Necessity description'),

@@ -4,7 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 
 
 class Contributor(models.Model):
-    user = models.ForeignKey(User, verbose_name=_('Login user'))
+    user = models.OneToOneField(User, verbose_name=_('Login user'))
 
     photo = models.ImageField(
         upload_to='contributor_photos', verbose_name=_('Contributor photo')
