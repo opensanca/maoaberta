@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %} Contributor {% endblock title %}
+
+{% block menu %}
+
+<aside class="col-md-2 col-sm-2 menu">
+  <div class="adjust-items">
+    <div class="profile-contributor-pic">
+      <img src="../../static/img/contributor/profile.png" class="img-responsive" alt="">
+    </div>
+    <div class="profile-contributor-name">
+      Contribuidor da Silva
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item"><a href="#">Projetos</a></li>
+      <li class="list-group-item"><a href="#">Compartilhados comigo</a></li>
+      <li class="list-group-item"><a href="#">Empresas apoiando</a></li>
+      <li class="list-group-item"><a href="#">Conquistas</a></li>
+      <li class="list-group-item"><a href="#">Saldo negativo</a></li>
+    </ul>
+  </div>
+</aside>
+
+{% endblock menu %}
+
+{% block content %}
+
+<article class="col-md-9 col-sm-2">
+
+  <div id="custom-search-input">
+    <div class="input-group icon-addon-sm">
+      <input type="text" class="form-control input-lg" placeholder="Buscar" />
+      <span class="input-group-btn">
+        <button class="btn btn-info btn-lg" type="button">
+          <i class="glyphicon glyphicon-search"></i>
+        </button>
+      </span>
+    </div>
+  </div>
+
+  <strong>Projetos que eu apoio</strong>
+  <hr>
+  <div class="row">
+    <div class="col-xs-6 col-sm-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
+          <p>
+            <a href="#" class="btn btn-primary" role="button">Novo</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
+          <h3>Titulo</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>
+            <a href="#" class="btn btn-primary" role="button">Ver</a>
+          </p>
+        </div>
+      </div>
+    </div><!-- Optional: clear the XS cols if their content doesn't match in height -->
+    <div class="clearfix visible-xs-block"></div>
+    <div class="col-xs-6 col-sm-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
+          <h3>Titulo</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>
+            <a href="#" class="btn btn-primary" role="button">Ver</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <strong>Meus projetos</strong>
+  <hr>
+  <div class="row">
+    <div class="col-xs-6 col-sm-4">
+      <div class="thumbnail">
+        <div class="caption">
+          <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
+          <h3>Titulo</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>
+            <a href="#" class="btn btn-primary" role="button">Editar</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+{% endblock content %}
