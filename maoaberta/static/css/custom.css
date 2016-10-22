@@ -30,6 +30,11 @@ body {
     color:#bdc3c7;
 }
 
+.list-group {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
 .list-group-item {
     position: relative;
     display: block;
@@ -37,7 +42,6 @@ body {
     margin-bottom: -1px;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #ddd;
     color: #fff;
 }
 
