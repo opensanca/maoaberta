@@ -14,9 +14,12 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 from dj_database_url import parse as parse_db_url
+from django.core.urlresolvers import reverse_lazy
 from prettyconf import config
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+SITE_ID = 1
 
 
 # Quick-start development settings - unsuitable for production
@@ -34,10 +37,16 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
+    # Documentation: https://github.com/pennersr/django-allauth
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 
     'contributors',
     'organizations',
@@ -117,3 +126,8 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+# Login
+LOGIN_REDIRECT_URL = reverse_lazy('home')
+LOGIN_URL = 'login'
