@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', HomePageView.as_view(), name='home'),
     url(r'^contributor/$', ContributorView.as_view(), name='contributor'),
-    url(r'^accounts/login/$', LoginView.as_view(), name='login'),
-    url(r'^accounts/login/$', LoginView.as_view(), name='account_signup'),
+    url(r'^login/$', LoginView.as_view(), name='login'),
+    url(r'^signout/$', LoginView.as_view(), name='account_signup'),
     url(r'^logout/$', logout_view, name='logout'),
 ]

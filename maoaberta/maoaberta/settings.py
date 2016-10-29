@@ -37,6 +37,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
+    # Documentation: https://github.com/pennersr/django-allauth
     'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
