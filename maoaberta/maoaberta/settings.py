@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 from dj_database_url import parse as parse_db_url
+from django.core.urlresolvers import reverse_lazy
 from prettyconf import config
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -117,3 +118,7 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+# Login
+LOGIN_REDIRECT_URL = reverse_lazy('home')
