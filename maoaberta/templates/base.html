@@ -39,13 +39,21 @@
               <img alt="/mãoaberta" src="{% static 'img/logo.png' %}">
             </a>
           </div>
-
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+            {% if request.user.is_authenticated %}
+              <li>
+                <a href="{% url 'contributor-detail' request.user.pk %}">{{request.user.username}}</a>
+              </li>
+              <li>
+               <a href="#">Logout</a>
+              </li>
+            {% else %}
               <li>
                 <a href="{% url 'login' %}">Login</a>
               </li>
+            {% endif%}
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -70,13 +78,13 @@
     {% endblock menu %}
 
     {% block content %}
-    <article class="col-md-8 col-sm-2 left-side-bar">
+    <article class="col-md-8 col-sm-2">
       <div class="row">
         <div class="col-sm-4 col-md-4 col-lg-4">
           <div class="thumbnail">
 
             <div class="caption">
-                <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
 
               <h3>Titulo</h3>
               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -90,11 +98,11 @@
         <div class="col-sm-6 col-md-4 col-lg-4">
           <div class="thumbnail">
             <div class="caption">
-                <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
               <h3>Titulo</h3>
               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <p><a href="#" class="btn btn-primary" role="button">Apoie</a>
-                </p>
+              </p>
             </div>
           </div>
         </div>
@@ -102,11 +110,11 @@
         <div class="col-sm-6 col-md-4 col-lg-4">
           <div class="thumbnail">
             <div class="caption">
-                <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
               <h3>Titulo</h3>
               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <p><a href="#" class="btn btn-primary" role="button">Apoie</a>
-                </p>
+              </p>
             </div>
           </div>
         </div>
@@ -116,11 +124,11 @@
         <div class="col-sm-6 col-md-4 col-lg-4">
           <div class="thumbnail">
             <div class="caption">
-                <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
               <h3>Titulo</h3>
               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <p><a href="#" class="btn btn-primary" role="button">Apoie</a>
-                </p>
+              </p>
             </div>
           </div>
         </div>
@@ -128,15 +136,14 @@
         <div class="col-sm-6 col-md-4 col-lg-4">
           <div class="thumbnail">
             <div class="caption">
-                <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-remove pull-right" aria-hidden="true"></span>
               <h3>Titulo</h3>
               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <p><a href="#" class="btn btn-primary" role="button">Apoie</a>
-                </p>
+              </p>
             </div>
           </div>
         </div>
-
       </div><!--/row-->
 
     </article>

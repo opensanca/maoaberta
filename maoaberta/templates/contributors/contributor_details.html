@@ -7,11 +7,11 @@
 
 <aside class="col-md-2 col-sm-2 menu">
   <div class="adjust-items">
-    <div class="profile-contributor-pic">
-      <img src="../../static/img/contributor/profile.png" class="img-responsive" alt="">
+    <div class="contributor-detail-photo">
+      <img src="{{ MEDIA_URL }}{{ object.photo }}" class="img-responsive" alt="">
     </div>
-    <div class="profile-contributor-name">
-      Contribuidor da Silva
+    <div class="contributor-detail-name">
+      {{ object }}
     </div>
     <ul class="list-group">
       <li class="list-group-item"><a href="#">Projetos</a></li>
