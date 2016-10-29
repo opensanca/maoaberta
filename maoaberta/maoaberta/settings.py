@@ -19,6 +19,8 @@ from prettyconf import config
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+SITE_ID = 1
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
@@ -35,10 +37,15 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 
     'contributors',
     'organizations',
@@ -122,3 +129,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Login
 LOGIN_REDIRECT_URL = reverse_lazy('home')
+LOGIN_URL = 'login'

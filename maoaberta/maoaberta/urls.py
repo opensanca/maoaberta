@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from django.contrib.auth import views as auth_views
-
-# from contributors.views import LoginView
-from contributors.views import ContributorView
+from allauth.account.views import LoginView
+from contributors.views import ContributorView, logout_view
 from organizations.views import HomePageView
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', HomePageView.as_view(), name='home'),
-    url(r'^login/$', auth_views.login, name='login'),
-    url(r'^contributor/$', ContributorView.as_view(), name='contributor')
+    url(r'^contributor/$', ContributorView.as_view(), name='contributor'),
+    url(r'^accounts/login/$', LoginView.as_view(), name='login'),
+    url(r'^accounts/login/$', LoginView.as_view(), name='account_signup'),
+    url(r'^logout/$', logout_view, name='logout'),
 ]
