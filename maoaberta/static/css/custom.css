@@ -82,7 +82,7 @@ body {
   padding: 10px;
 }
 
-.profile-contributor-pic img {
+.contributor-detail-photo img {
   float: none;
   margin: 0 auto;
   width: 50%;
@@ -90,9 +90,11 @@ body {
   -webkit-border-radius: 50% !important;
   -moz-border-radius: 50% !important;
   border-radius: 50% !important;
+  max-width: 250px;
+  max-height: 250px;
 }
 
-.profile-contributor-name {
+.contributor-detail-name {
   text-align: center;
   margin-top: 20px;
   color: #fff;
