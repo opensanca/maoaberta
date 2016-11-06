@@ -149,6 +149,21 @@ article {
   margin: 20px 40px 20px 40px;
 }
 
-aside {
+.organization-detail-photo img {
+  float: none;
+  align-content: left;
+  margin: 0 auto;
+  width: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+  max-width: 250px;
+}
 
+.organization-header {
+  margin-bottom: 30px;
+}
+
+.list-group-item {
+  color:#000;
 }

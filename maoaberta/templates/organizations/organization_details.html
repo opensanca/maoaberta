@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %} Organization {% endblock title %}
+
+{% block content %}
+
+<div class="col-md-10 organization-header">
+
+  <div id="custom-search-input">
+    <div class="input-group icon-addon-sm">
+      <input type="text" class="form-control input-lg" placeholder="Buscar" />
+      <span class="input-group-btn">
+        <button class="btn btn-info btn-lg" type="button">
+          <i class="glyphicon glyphicon-search"></i>
+        </button>
+      </span>
+    </div>
+  </div>
+
+  <div class="col-md-2">
+    <div class="pull-left organization-detail-photo">
+      <img src="{{ MEDIA_URL }}{{ object.photo }}" class="img-responsive" alt="">
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <strong>
+      {{ object.name }}
+    </strong>
+    <hr>
+    
+    <div>    
+      <a class="btn btn-primary"  href=" {{ object.facebook_url }}">Facebook</a>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <strong>Descrição</strong>
+    <hr/>
+    {{ object.description }}
+  </div>
+
+</div>
+
+<div class="col-md-10 ">
+  <div class="col-md-2">
+    <strong>Coordenador</strong>
+    <hr/>
+    {{object.coordinator}}
+    <br><br>
+    <strong>Localização</strong>
+    <hr/>
+    <span>???</span>
+    <br><br>
+    <strong>Contribuição</strong>
+    <hr/>
+    <span>???</span>
+  </div>
+
+  <div class="col-md-6">
+   <strong>Precisamos de ajuda</strong>
+   <hr/>
+   {{object.necessity_description}}
+   <br><br>
+   
+   <strong>Pedidos mensais</strong>
+     <hr/>
+     <ul class="list-group">
+      <li class="list-group-item"><input type="checkbox"> Papel</li>
+      <li class="list-group-item"><input type="checkbox"> Tesoura</li>
+      <li class="list-group-item"><input type="checkbox"> Pedra</li>
+      </ul>
+  </div>
+<div class="col-md-4">
+  <strong>Check list</strong>
+  <hr/>
+  {{object.projects}}
+</div>
+</div>
+{% endblock content %}
