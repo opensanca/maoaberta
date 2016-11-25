@@ -25,5 +25,5 @@ urlpatterns = [
     url(r'^$', HomePageView.as_view(), name='home'),
     url(r'^login/$', LoginView.as_view(), name='login'),
     url(r'^(?P<pk>\d+)/$', ContributorDetailView.as_view(), name='contributor-detail'),
-    url(r'^organization/(?P<pk>\d+)/$', OrganizationDetailView.as_view(), name='organization-detail')
+    url(r'^organization/(?P<pk>\d+)/$', OrganizationDetailView.as_view(), name='organization-detail'),
 ]
