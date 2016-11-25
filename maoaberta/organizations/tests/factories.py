@@ -1,7 +1,6 @@
 import factory
 
 from organizations.models import Organization, Necessity
-from projects.tests.factories import ProjectFactory
 from contributors.tests.factories import ContributorFactory
 
 
@@ -22,10 +21,6 @@ class OrganizationFactory(factory.django.DjangoModelFactory):
     description = factory.Faker("text")
 
     coordinator = factory.SubFactory(ContributorFactory)
-
-    #projects = factory.SubFactory(ProjectFactory)
-
-    #necessities = factory.SubFactory(NecessityFactory)
 
     necessity_description = factory.Faker("text")
 
